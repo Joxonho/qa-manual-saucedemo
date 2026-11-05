@@ -16,3 +16,5 @@
 
 
 **Status da execução:** PASSED
+
+**Evidência:** https://github.com/Joxonho/qa-manual-saucedemo/blob/main/Evidencias/CT-001%20Login%20Usuario%20Vazio%20Passed.png
