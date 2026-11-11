@@ -15,7 +15,7 @@ Verificar se o sistema permite remover um produto do carrinho de compras e se o 
 ## Dados de teste
 - **Usuário:** `standard_user`
 - **Senha:** `secret_sauce`
-- **Produto utilizado:** [preencher com o nome do produto realmente utilizado]
+- **Produto utilizado:** Sauce Labs Backpack
 
 ## Passos para execução
 1. Acessar o SauceDemo.
@@ -30,15 +30,13 @@ Verificar se o sistema permite remover um produto do carrinho de compras e se o 
 O produto removido deve deixar de aparecer no carrinho de compras, e o contador do carrinho deve ser atualizado.
 
 ## Resultado obtido
-[Preencher após conferir o comportamento observado durante a execução.]
+O produto foi removido do carrinho de compras, o contador deixou de ser exibido na página e não apresentou mensagem de erro.
 
 ## Status
-**PENDING — Aguardando registro e validação do resultado obtido.**
+**PASSED**
 
 ## Justificativa
-[Registrar com suas palavras por que o resultado observado atende ou não ao resultado esperado.]
+O sistema removeu o produto e não apresentou erro.
 
 ## Evidência da execução
 ![Evidência CT-005 — Remoção de produto do carrinho](./CT-005-remover-produto-carrinho.png)
-
-> **Nota:** Salve a captura de tela com o nome `CT-005-remover-produto-carrinho.png` na mesma pasta deste documento para que a imagem apareça no GitHub. O link só funcionará depois de enviar a imagem.
