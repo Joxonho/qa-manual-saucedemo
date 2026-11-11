@@ -16,8 +16,8 @@ Verificar se o sistema impede o acesso quando são informadas credenciais invál
 - Não deve existir uma sessão autenticada.
 
 ## Dados de teste
-- **Usuário:** conforme credenciais inválidas utilizadas na execução original.
-- **Senha:** conforme credenciais inválidas utilizadas na execução original.
+- **Usuário:** standard_user
+- **Senha:** 12345
 
 > Observação: os valores exatos das credenciais não foram recuperados no registro disponível. Preencha-os conforme a execução original, se desejar manter essa informação no documento.
 
@@ -40,8 +40,4 @@ Conforme o registro original, a senha informada estava incorreta e o acesso não
 O teste foi considerado aprovado porque o sistema impediu o acesso com as credenciais inválidas.
 
 ## Evidência da execução
-Adicionar aqui a captura de tela real da execução.
-
-<!-- Exemplo após adicionar o PNG à mesma pasta:
-![Evidência do CT-002](./CT-002-login-credenciais-invalidas.png)
--->
+![Evidência CT-002 — Login com credenciais inválidas](./CT-002credenciais-invalidas.png)
