@@ -10,7 +10,7 @@ Verificar se o sistema permite remover um produto do carrinho de compras e se o 
 
 ## Pré-condições
 - O usuário deve estar autenticado no SauceDemo.
-- Deve haver pelo menos um produto adicionado ao carrinho de compras.
+- Deve haver pelo menos 1 (um) produto adicionado ao carrinho de compras.
 
 ## Dados de teste
 - **Usuário:** `standard_user`
@@ -18,16 +18,14 @@ Verificar se o sistema permite remover um produto do carrinho de compras e se o 
 - **Produto utilizado:** Sauce Labs Backpack
 
 ## Passos para execução
-1. Acessar o SauceDemo.
-2. Fazer login com credenciais válidas.
-3. Adicionar um produto ao carrinho.
-4. Acessar o carrinho de compras.
-5. Clicar em **Remove** no produto adicionado.
-6. Verificar se o produto deixou de aparecer no carrinho.
-7. Verificar se o contador do carrinho foi atualizado.
+1. Adicionar o produto referido ao carrinho.
+2. Acessar o carrinho de compras.
+3. Clicar em **Remove** no produto adicionado.
+4. Verificar se o produto deixou de aparecer no carrinho.
+5. Verificar se o contador do carrinho foi atualizado/deixou de ser exibido na página.
 
 ## Resultado esperado
-O produto removido deve deixar de aparecer no carrinho de compras, e o contador do carrinho deve ser atualizado.
+O produto removido deve deixar de aparecer no carrinho de compras, e o contador do carrinho deve ser atualizado/deixou de ser exibido na página.
 
 ## Resultado obtido
 O produto foi removido do carrinho de compras, o contador deixou de ser exibido na página e não apresentou mensagem de erro.
