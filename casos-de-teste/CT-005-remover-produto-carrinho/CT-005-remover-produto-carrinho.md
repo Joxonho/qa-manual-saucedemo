@@ -10,7 +10,7 @@ Verificar se o sistema permite remover o único produto do carrinho de compras.
 
 ## Pré-condições
 - O usuário deve estar autenticado no SauceDemo.
-- Deve haver pelo menos 1 (um) produto adicionado ao carrinho de compras.
+- O carrinho de compras deve conter exatamente um produto: Sauce Labs Backpack.
 
 ## Dados de teste
 - **Usuário:** `standard_user`
@@ -21,7 +21,7 @@ Verificar se o sistema permite remover o único produto do carrinho de compras.
 1. Acessar o carrinho de compras.
 2. Clicar em **Remove** no produto adicionado.
 3. Verificar se o produto deixou de aparecer no carrinho.
-4. Verificar se o contador do carrinho foi atualizado/deixou de ser exibido na página.
+4. Observar e registrar o comportamento do contador do carrinho após a remoção do produto.
 
 ## Resultado esperado
 O produto Sauce Labs Backpack deve deixar de ser exibido no carrinho de compras após a remoção.
