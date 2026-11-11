@@ -17,4 +17,4 @@
 
 **Status da execução:** PASSED
 
-**Evidência:** ![Evidência da execução](./CT-001%20Login%20Usuario%20Vazio%20Passed.png)
+**Evidência:** https://github.com/Joxonho/qa-manual-saucedemo/blob/main/casos-de-teste/CT-001-login-nome-vazio/CT-001%20Login%20Usuario%20Vazio%20Passed%20(1).png
