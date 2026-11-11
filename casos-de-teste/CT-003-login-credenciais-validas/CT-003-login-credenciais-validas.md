@@ -29,7 +29,7 @@ Verificar se o sistema permite a autenticação quando são informadas credencia
 O sistema deve autenticar o usuário e direcioná-lo à página de produtos.
 
 ## Resultado obtido
-O login foi realizado e o usuário foi redirecionado para a página de produtos do site.
+O sistema redirecionou o usuário para a página de produtos do SauceDemo, onde foi possível visualizar a lista de produtos, sem exibição de mensagem de erro.
 
 ## Status
 **PASSED**
