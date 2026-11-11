@@ -19,8 +19,6 @@ Verificar se o sistema impede o acesso quando são informadas credenciais invál
 - **Usuário:** standard_user
 - **Senha:** 12345
 
-> Observação: os valores exatos das credenciais não foram recuperados no registro disponível. Preencha-os conforme a execução original, se desejar manter essa informação no documento.
-
 ## Passos para execução
 1. Acessar a página de login do SauceDemo.
 2. Informar credenciais inválidas.
@@ -31,7 +29,9 @@ Verificar se o sistema impede o acesso quando são informadas credenciais invál
 O sistema deve impedir a autenticação e apresentar uma mensagem informando que as credenciais são inválidas.
 
 ## Resultado obtido
-Conforme o registro original, a senha informada estava incorreta e o acesso não foi realizado.
+O sistema impediu o acesso e apresentou a mensagem:
+
+`Epic sadface: Username and password do not match any user in this service`
 
 ## Status
 **PASSED**
