@@ -40,6 +40,6 @@ O sistema apresentou o produto **Sauce Labs Backpack** no carrinho de compras, c
 
 ## Evidência de execução
 
-![CT-004 — Produto Sauce Labs Backpack no carrinho, com quantidade e contador iguais a 1](../evidencias/CT-004-produto-adicionado.png)
+![CT-004 — Produto Sauce Labs Backpack no carrinho, com quantidade e contador iguais a 1](./CT-004-produto-adicionado.png)
 
 > **Observação:** a captura comprova o estado final do carrinho. A execução dos passos e a condição inicial de carrinho vazio foram informadas pela testadora. A remoção do produto será documentada separadamente no CT-005.
