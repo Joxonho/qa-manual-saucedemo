@@ -16,8 +16,8 @@ Verificar se o sistema permite a autenticação quando são informadas credencia
 - Não deve existir uma sessão autenticada.
 
 ## Dados de teste
-- **Usuário:** conforme credenciais válidas utilizadas na execução original.
-- **Senha:** conforme credenciais válidas utilizadas na execução original.
+- **Usuário:** standard_user
+- **Senha:** secret_sauce
 
 ## Passos para execução
 1. Acessar a página de login do SauceDemo.
@@ -38,8 +38,4 @@ O login foi realizado e o usuário foi redirecionado para a página de produtos 
 O teste foi considerado aprovado porque o comportamento observado correspondeu ao resultado esperado: o acesso foi permitido e a página de produtos foi exibida.
 
 ## Evidência da execução
-Adicionar aqui a captura de tela real da execução.
-
-<!-- Exemplo após adicionar o PNG à mesma pasta:
-![Evidência do CT-003](./CT-003-login-credenciais-validas.png)
--->
+![Evidência CT-003 — Login com credenciais válidas](./CT-003credenciais-validas.png)
