@@ -6,7 +6,7 @@
 **Critério de aceitação:** CA-02 — Remover produto
 
 ## Objetivo
-Verificar se o sistema permite remover um produto do carrinho de compras e se o contador do carrinho é atualizado.
+Verificar se o sistema permite remover o único produto do carrinho de compras.
 
 ## Pré-condições
 - O usuário deve estar autenticado no SauceDemo.
@@ -18,17 +18,19 @@ Verificar se o sistema permite remover um produto do carrinho de compras e se o 
 - **Produto utilizado:** Sauce Labs Backpack
 
 ## Passos para execução
-1. Adicionar o produto referido ao carrinho.
-2. Acessar o carrinho de compras.
-3. Clicar em **Remove** no produto adicionado.
-4. Verificar se o produto deixou de aparecer no carrinho.
-5. Verificar se o contador do carrinho foi atualizado/deixou de ser exibido na página.
+1. Acessar o carrinho de compras.
+2. Clicar em **Remove** no produto adicionado.
+3. Verificar se o produto deixou de aparecer no carrinho.
+4. Verificar se o contador do carrinho foi atualizado/deixou de ser exibido na página.
 
 ## Resultado esperado
-O produto removido deve deixar de aparecer no carrinho de compras, e o contador do carrinho deve ser atualizado/deixou de ser exibido na página.
+O produto Sauce Labs Backpack deve deixar de ser exibido no carrinho de compras após a remoção.
 
 ## Resultado obtido
-O produto foi removido do carrinho de compras, o contador deixou de ser exibido na página e não apresentou mensagem de erro.
+O produto Sauce Labs Backpack foi removido do carrinho de compras. Como era o único produto, o contador deixou de ser exibido na página. Não foi apresentada mensagem de erro.
+
+## Observação de QA
+O carrinho continha apenas um produto. Após sua remoção, o contador deixou de ser exibido. A história de usuário e o critério de aceitação não especificam se, quando o último produto é removido, o contador deve ser ocultado ou apresentar o valor zero. Classifiquei como comportamento pendente de esclarecimento.
 
 ## Status
 **PASSED**
