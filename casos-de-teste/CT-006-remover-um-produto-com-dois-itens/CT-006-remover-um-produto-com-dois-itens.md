@@ -40,6 +40,4 @@ O produto **Sauce Labs Backpack** foi removido do carrinho de compras, o produto
 Os três comportamentos verificados corresponderam ao resultado esperado: remoção somente do produto selecionado, permanência do outro produto e atualização do contador de 2 para 1.
 
 ## Evidência da execução
-**Pendente de anexar:** captura de tela do carrinho após a remoção, mostrando apenas o produto Sauce Labs Bike Light e o contador com 1 item.
-
-**Nome sugerido para a imagem:** `CT-006-remover-um-produto-com-dois-itens.png`
+![Evidência do CT-006](CT-006-remover-um-produto-com-dois-itens.png)
