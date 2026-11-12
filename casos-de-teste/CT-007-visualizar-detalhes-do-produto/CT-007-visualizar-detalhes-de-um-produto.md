@@ -45,8 +45,4 @@ O sistema abriu corretamente a página do produto selecionado e exibiu as inform
 
 ## Evidência
 
-Print da página de detalhes capturado durante a execução. **Pendente de salvar e anexar ao repositório.**
-
-> Depois de salvar a imagem na mesma pasta deste arquivo, com o nome `CT-007-evidencia.png`, a referência abaixo a exibirá no GitHub.
-
-![Evidência do CT-007 — Detalhes do Sauce Labs Fleece Jacket](CT-007-evidencia.png)
+![Evidência do CT-007 — Visualizar detalhes do produto](https://raw.githubusercontent.com/Joxonho/qa-manual-saucedemo/main/casos-de-teste/CT-007-visualizar-detalhes-do-produto/CT-007-visualizar-detalhes-do-produto.png)
