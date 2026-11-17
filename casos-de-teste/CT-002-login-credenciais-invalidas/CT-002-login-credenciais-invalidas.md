@@ -1,4 +1,4 @@
-# CT-002 — Login com credenciais inválidas
+# CT-002 — Login com usuário válido e senha incorreta
 
 ## Identificação
 - **ID:** CT-002
@@ -8,7 +8,7 @@
 - **Status registrado:** PASSED
 
 ## Objetivo
-Verificar se o sistema impede o acesso quando são informadas credenciais inválidas.
+Verificar se o sistema impede o acesso quando são informados usuário válido e senha incorreta.
 
 ## Pré-condições
 - O sistema SauceDemo deve estar acessível.
@@ -21,16 +21,14 @@ Verificar se o sistema impede o acesso quando são informadas credenciais invál
 
 ## Passos para execução
 1. Acessar a página de login do SauceDemo.
-2. Informar credenciais inválidas.
+2. Preencher os campos Username e Password com os dados definidos na seção Dados de Teste.
 3. Clicar no botão **Login**.
-4. Observar a resposta apresentada pelo sistema.
 
 ## Resultado esperado
 O sistema deve impedir a autenticação e apresentar uma mensagem informando que as credenciais são inválidas.
 
 ## Resultado obtido
 O sistema impediu o acesso e apresentou a mensagem:
-
 `Epic sadface: Username and password do not match any user in this service`
 
 ## Status
