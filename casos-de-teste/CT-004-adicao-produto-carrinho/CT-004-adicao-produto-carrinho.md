@@ -1,6 +1,6 @@
 # CT-004 — Adição de produto ao carrinho de compras
 
-**História de usuário:** HU-002 — Gerenciamento de produtos no carrinho de compras  
+**História de usuário:** [HU-002 — Gerenciamento do carrinho de compras](../../requisitos/HU-002-gerenciamento-carrinho.md)  
 **Critério de aceitação principal:** CA-01 — Adicionar produto  
 **Sistema:** [SauceDemo](https://www.saucedemo.com/)  
 **Tipo de teste:** Funcional manual  
