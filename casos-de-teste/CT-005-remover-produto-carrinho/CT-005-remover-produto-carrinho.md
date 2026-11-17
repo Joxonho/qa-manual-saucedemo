@@ -30,7 +30,7 @@ O produto Sauce Labs Backpack deve deixar de ser exibido no carrinho de compras 
 O produto Sauce Labs Backpack foi removido do carrinho de compras. Como era o único produto, o contador deixou de ser exibido na página. Não foi apresentada mensagem de erro.
 
 ## Observação de QA
-O carrinho continha apenas um produto. Após sua remoção, o contador deixou de ser exibido. A história de usuário e o critério de aceitação não especificam se, quando o último produto é removido, o contador deve ser ocultado ou apresentar o valor zero. Classifiquei como comportamento pendente de esclarecimento.
+Produto removido corretamente do carrinho. Após a remoção do último item, o contador deixou de ser exibido; como não há critério definido sobre esse comportamento, registro como pendente de esclarecimento.
 
 ## Status
 **PASSED**
