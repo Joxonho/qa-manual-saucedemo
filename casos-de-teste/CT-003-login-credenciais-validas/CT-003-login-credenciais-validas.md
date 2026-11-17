@@ -21,7 +21,7 @@ Verificar se o sistema permite a autenticação quando são informadas credencia
 
 ## Passos para execução
 1. Acessar a página de login do SauceDemo.
-2. Informar credenciais válidas.
+2. Preencher os campos Username e Password com as credenciais válidas informadas em Dados de Teste.
 3. Clicar no botão **Login**.
 4. Observar a página para a qual o sistema direciona o usuário.
 
