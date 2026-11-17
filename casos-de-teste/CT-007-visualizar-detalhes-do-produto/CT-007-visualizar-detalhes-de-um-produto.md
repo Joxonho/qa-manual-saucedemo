@@ -10,7 +10,7 @@
 
 ## Objetivo
 
-Verificar se, ao clicar em um produto no catálogo, o sistema abre a página de detalhes correspondente e apresenta as informações do produto.
+Verificar se, ao clicar em um produto na listagem, o sistema exibe a página de detalhes com nome, imagem, descrição e preço visíveis.
 
 ## Pré-condições
 
@@ -24,8 +24,6 @@ Verificar se, ao clicar em um produto no catálogo, o sistema abre a página de 
 ## Passos para execução
 
 1. Na listagem de produtos, clicar no nome **Sauce Labs Fleece Jacket**.
-2. Verificar se a página de detalhes do produto é aberta.
-3. Conferir se a página exibe o nome, a imagem, a descrição e o preço do produto selecionado.
 
 ## Resultado esperado
 
