@@ -12,8 +12,8 @@
 4. Clicar no botão Login.
 
 **Resultado esperado:** O sistema deve impedir o login e apresentar uma mensagem informando que o nome de usuário é obrigatório.
-**Resultado observado:** Epic Sadface: Username is required
 
+**Resultado observado:** Após clicar em Login com o campo Username vazio, o sistema permaneceu na página de login e exibiu a mensagem de erro Epic Sadface: Username is required
 
 **Status da execução:** PASSED
 
