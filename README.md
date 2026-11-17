@@ -68,6 +68,56 @@ Aplicar conhecimentos de QA Manual por meio de:
 
 **Status registrado:** PASSED.
 
+### CT-004 — Adição de produto ao carrinho
+
+**Tipo:** Teste funcional.
+
+**Objetivo:** Verificar se o sistema permite adicionar o produto Sauce Labs Backpack ao carrinho de compras.
+
+**Resultado esperado:** O produto deve aparecer no carrinho com quantidade 1, e o contador deve indicar 1.
+
+**Resultado observado:** O produto foi exibido no carrinho com quantidade 1, e o contador apresentou 1.
+
+**Status registrado:** PASSED.
+
+### CT-005 — Remoção de produto do carrinho
+
+**Tipo:** Teste funcional.
+
+**Objetivo:** Verificar se o sistema permite remover o único produto do carrinho de compras.
+
+**Resultado esperado:** O produto Sauce Labs Backpack deve deixar de ser exibido no carrinho após sua remoção.
+
+**Resultado observado:** O produto Sauce Labs Backpack foi removido do carrinho. Como era o único produto, o contador deixou de ser exibido.
+
+**Status registrado:** PASSED.
+
+**Observação:** O comportamento do contador após a remoção do último produto permanece pendente de esclarecimento, pois não há critério definido para essa situação.
+
+### CT-006 — Remover um produto com dois itens no carrinho
+
+**Tipo:** Teste funcional.
+
+**Objetivo:** Verificar se o sistema remove apenas o produto selecionado, mantém o outro produto no carrinho e atualiza o contador de 2 para 1.
+
+**Resultado esperado:** O Sauce Labs Backpack deve ser removido, o Sauce Labs Bike Light deve permanecer e o contador deve indicar 1.
+
+**Resultado observado:** O Sauce Labs Backpack foi removido, o Sauce Labs Bike Light permaneceu no carrinho e o contador passou a indicar 1.
+
+**Status registrado:** PASSED.
+
+### CT-007 — Visualizar detalhes de um produto
+
+**Tipo:** Teste funcional positivo.
+
+**Objetivo:** Verificar se, ao selecionar um produto na listagem, o sistema exibe sua página de detalhes com as informações correspondentes.
+
+**Resultado esperado:** A página deve apresentar o nome, a imagem, a descrição e o preço do produto selecionado.
+
+**Resultado observado:** A página de detalhes do Sauce Labs Fleece Jacket foi aberta, exibindo a imagem, o nome, a descrição, o preço e o botão Add to cart.
+
+**Status registrado:** PASSED.
+
 ## Relatório de bug simulado
 
 Durante os estudos, também foi elaborado um exercício de documentação de defeitos.
@@ -95,7 +145,9 @@ Funcionalidades previstas para os testes:
 - Carrinho de compras.
 - Finalização de compras (checkout).
 
-Os casos de teste, resultados e evidências serão documentados conforme sua execução.## Evidências e documentação
+Os casos de teste, resultados e evidências serão documentados conforme sua execução.
+
+## Evidências e documentação
 
 Os casos de teste serão organizados em documentos técnicos, acompanhados das evidências de execução disponíveis.
 
