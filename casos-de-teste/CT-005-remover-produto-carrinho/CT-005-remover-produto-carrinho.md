@@ -3,8 +3,7 @@
 **Sistema:** SauceDemo  
 **Funcionalidade:** Carrinho de compras — remoção de produto  
 **História de usuário:** [HU-002 — Gerenciamento do carrinho de compras](../../requisitos/HU-002-gerenciamento-carrinho.md)  
-**Critério de aceitação:** CA-02 — Remover produto
-
+**Critério de aceitação:** [CA-02 — Remover produto](../../requisitos/HU-002-gerenciamento-carrinho.md#ca-02--remover-produto-do-carrinho)
 ## Objetivo
 Verificar se o sistema permite remover o único produto do carrinho de compras.
 
