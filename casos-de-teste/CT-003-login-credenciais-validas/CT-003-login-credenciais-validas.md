@@ -1,4 +1,3 @@
-
 # CT-003 — Login com credenciais válidas
 
 ## Identificação
@@ -7,6 +6,8 @@
 - **Funcionalidade:** Login
 - **Sistema:** SauceDemo
 - **Tipo de teste:** Funcional — cenário positivo
+- - **História de usuário:** [HU-001 — Login de usuário](../../requisitos/HU-001-login.md)
+- **Critério de aceitação:** [CA-01 — Login com credenciais válidas](../../requisitos/HU-001-login.md#ca-01--login-com-credenciais-válidas)
 
 ## Objetivo
 
