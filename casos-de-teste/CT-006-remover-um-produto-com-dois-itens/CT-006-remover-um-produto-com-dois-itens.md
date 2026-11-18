@@ -3,7 +3,7 @@
 **Sistema:** SauceDemo  
 **Funcionalidade:** Carrinho de compras — remoção de produto  
 **História de usuário:** [HU-002 — Gerenciamento do carrinho de compras](../../requisitos/HU-002-gerenciamento-carrinho.md)  
-**Critério de aceitação:** CA-02 — Remover produto
+**Critério de aceitação:** [CA-02 — Remover produto](../../requisitos/HU-002-gerenciamento-carrinho.md#ca-02--remover-produto-do-carrinho)
 
 ## Objetivo
 Verificar se, ao remover um dos dois produtos do carrinho de compras, o sistema remove apenas o produto selecionado, mantém o outro no carrinho e atualiza o contador de 2 para 1.
