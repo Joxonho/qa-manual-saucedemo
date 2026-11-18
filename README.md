@@ -48,6 +48,7 @@ qa-manual-saucedemo/
 │   └── CT-007-visualizar-detalhes-do-produto/
 │
 └── requisitos/
+    ├── HU-001-login.md 
     └── HU-002-gerenciamento-carrinho.md
 ```
 
