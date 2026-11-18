@@ -1,182 +1,133 @@
 # 🐞 QA Manual — SauceDemo
 
-## Sobre o projeto
+![QA Manual](https://img.shields.io/badge/QA-Manual-blue)
+![Testes](https://img.shields.io/badge/Testes-Funcionais-success)
+![Status](https://img.shields.io/badge/Projeto-Em%20Desenvolvimento-orange)
 
-Este repositório apresenta meus estudos e práticas em Quality Assurance (QA), com foco em testes manuais de software.
+## 📌 Sobre o projeto
 
-O projeto foi desenvolvido durante minha formação em QA, utilizando a aplicação SauceDemo para praticar técnicas de teste, documentação de cenários, análise de resultados e elaboração de relatórios de defeitos.
+Este repositório reúne estudos e práticas em **Quality Assurance (QA)**, com foco em testes manuais de software.
 
-## Aplicação utilizada
+O projeto utiliza a aplicação SauceDemo como ambiente de testes para desenvolver habilidades de planejamento, elaboração e execução de casos de teste, análise de resultados, documentação de evidências e identificação de comportamentos inesperados.
 
-**Nome:** SauceDemo
+## 🎯 Objetivos
 
-**Site:** https://www.saucedemo.com/
+- Elaborar casos de teste funcionais.
+- Aplicar cenários positivos e negativos.
+- Validar resultados esperados e obtidos.
+- Trabalhar com histórias de usuário e critérios de aceitação.
+- Desenvolver rastreabilidade entre requisitos e casos de teste.
+- Registrar evidências de execução.
+- Praticar a documentação de defeitos.
+- Desenvolver uma suíte de testes de regressão.
 
-**Tipo:** Aplicação web de comércio eletrônico utilizada para prática de testes de software.
+## 🖥️ Aplicação utilizada
 
-## Objetivo do projeto
+| Informação | Descrição |
+|---|---|
+| Aplicação | SauceDemo |
+| URL | https://www.saucedemo.com/ |
+| Tipo | Aplicação web de comércio eletrônico |
+| Abordagem | Testes manuais |
+| Categoria | Testes funcionais |
 
-Aplicar conhecimentos de QA Manual por meio de:
+## 📂 Estrutura do repositório
 
-- Elaboração de casos de teste.
-- Execução de testes funcionais.
-- Validação de resultados esperados e obtidos.
-- Identificação de comportamentos inesperados.
-- Documentação de testes.
-- Registro de evidências de execução.
-- Elaboração de relatórios de defeitos.
+```text
+qa-manual-saucedemo/
+│
+├── README.md
+│
+├── casos-de-teste/
+│   ├── CT-001-login-nome-vazio/
+│   ├── CT-002-login-credenciais-invalidas/
+│   ├── CT-003-login-credenciais-validas/
+│   ├── CT-004-adicao-produto-carrinho/
+│   ├── CT-005-remover-produto-carrinho/
+│   ├── CT-006-remover-um-produto-com-dois-itens/
+│   └── CT-007-visualizar-detalhes-do-produto/
+│
+└── requisitos/
+    └── HU-002-gerenciamento-carrinho.md
+```
 
-## Casos de teste realizados
+## 📋 Casos de teste documentados
 
-### CT-001 — Login com nome de usuário vazio
+| ID | Cenário | Tipo | Status |
+|---|---|---|---|
+| [CT-001](casos-de-teste/CT-001-login-nome-vazio/CT-001-login-nome-vazio.MD) | Login com usuário vazio | Negativo | PASSED |
+| [CT-002](casos-de-teste/CT-002-login-credenciais-invalidas/CT-002-login-credenciais-invalidas.md) | Login com senha incorreta | Negativo | PASSED |
+| [CT-003](casos-de-teste/CT-003-login-credenciais-validas/CT-003-login-credenciais-validas.md) | Login com credenciais válidas | Positivo | PASSED |
+| [CT-004](casos-de-teste/CT-004-adicao-produto-carrinho/CT-004-adicao-produto-carrinho.md) | Adicionar produto ao carrinho | Positivo | PASSED |
+| [CT-005](casos-de-teste/CT-005-remover-produto-carrinho/CT-005-remover-produto-carrinho.md) | Remover o único produto do carrinho | Positivo | PASSED |
+| [CT-006](casos-de-teste/CT-006-remover-um-produto-com-dois-itens/CT-006-remover-um-produto-com-dois-itens.md) | Remover um produto mantendo o outro | Positivo | PASSED |
+| [CT-007](casos-de-teste/CT-007-visualizar-detalhes-do-produto/CT-007-visualizar-detalhes-de-um-produto.md) | Visualizar detalhes de um produto | Positivo | PASSED |
 
-**Tipo:** Teste negativo.
+**Total: 7 casos de teste documentados.**
 
-**Objetivo:** Verificar se o sistema impede o login quando o campo de usuário não é preenchido.
+Os resultados, passos de execução, dados de teste, justificativas e evidências estão registrados individualmente nos documentos correspondentes.
 
-**Resultado esperado:** O sistema deve impedir o acesso e apresentar uma mensagem de obrigatoriedade.
+## 📝 Requisitos e rastreabilidade
 
-**Resultado observado:** A aplicação apresentou a mensagem:
+O projeto utiliza histórias de usuário e critérios de aceitação para relacionar os requisitos aos cenários de teste.
 
-"Epic sadface: Username is required"
+**HU-002 — Gerenciamento do carrinho de compras**
 
-**Status registrado:** PASSED.
+[Consultar história de usuário e critérios de aceitação](requisitos/HU-002-gerenciamento-carrinho.md)
 
-### CT-002 — Login com senha incorreta
+Critérios documentados:
 
-**Tipo:** Teste negativo.
+- **CA-01:** Adicionar produto ao carrinho.
+- **CA-02:** Remover produto do carrinho.
 
-**Objetivo:** Verificar se o sistema impede o acesso quando são utilizadas credenciais inválidas.
+Os casos CT-004, CT-005 e CT-006 estão vinculados a esses critérios de aceitação.
 
-**Resultado esperado:** O sistema deve impedir o login e informar que as credenciais não correspondem.
+## 🐛 Relatório de defeito simulado
 
-**Resultado observado:** A aplicação apresentou a mensagem:
-
-"Epic sadface: Username and password do not match any user in this service"
-
-**Status registrado:** PASSED.
-
-### CT-003 — Login com credenciais válidas
-
-**Tipo:** Teste positivo.
-
-**Objetivo:** Verificar se o usuário consegue acessar a aplicação utilizando credenciais válidas.
-
-**Resultado esperado:** O sistema deve realizar a autenticação e redirecionar o usuário para a página de produtos.
-
-**Resultado observado:** O login foi realizado e o usuário foi redirecionado para a página de produtos.
-
-**Status registrado:** PASSED.
-
-### CT-004 — Adição de produto ao carrinho
-
-**Tipo:** Teste funcional.
-
-**Objetivo:** Verificar se o sistema permite adicionar o produto Sauce Labs Backpack ao carrinho de compras.
-
-**Resultado esperado:** O produto deve aparecer no carrinho com quantidade 1, e o contador deve indicar 1.
-
-**Resultado observado:** O produto foi exibido no carrinho com quantidade 1, e o contador apresentou 1.
-
-**Status registrado:** PASSED.
-
-### CT-005 — Remoção de produto do carrinho
-
-**Tipo:** Teste funcional.
-
-**Objetivo:** Verificar se o sistema permite remover o único produto do carrinho de compras.
-
-**Resultado esperado:** O produto Sauce Labs Backpack deve deixar de ser exibido no carrinho após sua remoção.
-
-**Resultado observado:** O produto Sauce Labs Backpack foi removido do carrinho. Como era o único produto, o contador deixou de ser exibido.
-
-**Status registrado:** PASSED.
-
-**Observação:** O comportamento do contador após a remoção do último produto permanece pendente de esclarecimento, pois não há critério definido para essa situação.
-
-### CT-006 — Remover um produto com dois itens no carrinho
-
-**Tipo:** Teste funcional.
-
-**Objetivo:** Verificar se o sistema remove apenas o produto selecionado, mantém o outro produto no carrinho e atualiza o contador de 2 para 1.
-
-**Resultado esperado:** O Sauce Labs Backpack deve ser removido, o Sauce Labs Bike Light deve permanecer e o contador deve indicar 1.
-
-**Resultado observado:** O Sauce Labs Backpack foi removido, o Sauce Labs Bike Light permaneceu no carrinho e o contador passou a indicar 1.
-
-**Status registrado:** PASSED.
-
-### CT-007 — Visualizar detalhes de um produto
-
-**Tipo:** Teste funcional positivo.
-
-**Objetivo:** Verificar se, ao selecionar um produto na listagem, o sistema exibe sua página de detalhes com as informações correspondentes.
-
-**Resultado esperado:** A página deve apresentar o nome, a imagem, a descrição e o preço do produto selecionado.
-
-**Resultado observado:** A página de detalhes do Sauce Labs Fleece Jacket foi aberta, exibindo a imagem, o nome, a descrição, o preço e o botão Add to cart.
-
-**Status registrado:** PASSED.
-
-## Relatório de bug simulado
-
-Durante os estudos, também foi elaborado um exercício de documentação de defeitos.
+Durante os estudos também foi desenvolvido um exercício de documentação de bug:
 
 **Cenário:** Produto adicionado não aparece no carrinho de compras.
 
 **Produto:** Sauce Labs Backpack.
 
-**Resultado esperado:** O produto adicionado deve aparecer no carrinho.
+O exercício contempla:
+- Título do defeito.
+- Passos para reprodução.
+- Resultado esperado.
+- Resultado obtido.
 
-**Resultado descrito na simulação:** O produto não aparece no carrinho de compras.
+**Importante:** trata-se de uma simulação didática para praticar a elaboração de relatórios de defeitos, não de um bug real comprovado na aplicação.
 
-**Observação importante:** Este relatório foi desenvolvido como exercício didático de documentação de bugs. Não representa um defeito real comprovado na aplicação SauceDemo.
+## 🔄 Testes de regressão
 
-## Testes de Regressão
+Está em desenvolvimento uma suíte de testes de regressão para verificar se funcionalidades essenciais continuam operando corretamente após alterações no sistema.
 
-Este projeto também contempla o desenvolvimento de uma suíte de testes de regressão para a aplicação SauceDemo.
-
-O objetivo é verificar se funcionalidades essenciais continuam funcionando corretamente após alterações no sistema.
-
-Funcionalidades previstas para os testes:
+Funcionalidades previstas:
 
 - Autenticação de usuários.
 - Catálogo de produtos.
-- Carrinho de compras.
+- Gerenciamento do carrinho.
 - Finalização de compras (checkout).
 
-Os casos de teste, resultados e evidências serão documentados conforme sua execução.
+## 🧠 Competências em desenvolvimento
 
-## Evidências e documentação
+- Quality Assurance (QA Manual).
+- Planejamento e elaboração de casos de teste.
+- Testes funcionais positivos e negativos.
+- Análise de resultados esperados e obtidos.
+- Histórias de usuário e critérios de aceitação.
+- Rastreabilidade de requisitos.
+- Registro e organização de evidências.
+- Documentação de defeitos.
+- Testes de regressão.
+- Git e GitHub.
 
-Os casos de teste serão organizados em documentos técnicos, acompanhados das evidências de execução disponíveis.
-
-As próximas etapas incluem:
-
-- Revisão e padronização dos casos de teste.
-- Documentação do ambiente de execução.
-- Organização das evidências reais.
-- Registro dos resultados de execução.
-- Documentação do relatório de bug simulado.
-
-## 🐞 Competências em Desenvolvimento
-
-- 🔍 Quality Assurance (QA Manual).
-- 🧪 Planejamento e elaboração de casos de teste.
-- ✅ Execução de testes funcionais.
-- 🔐 Testes positivos e negativos de autenticação.
-- 📋 Análise de resultados esperados e obtidos.
-- 🐛 Elaboração de relatórios de defeitos (prática simulada).
-- 📸 Registro e organização de evidências de testes.
-- 🔄 Planejamento e desenvolvimento de suítes de testes de regressão.
-- 🛒 Testes de funcionalidades de comércio eletrônico.
-- 📂 Documentação técnica e organização de projetos no GitHub.
-
-
-## Autora
+## 👩‍💻 Autora
 
 **Joseane Oliveira**
 
-Profissional em formação na área de Quality Assurance (QA), com foco em testes manuais, testes funcionais e testes de APIs REST.
+Projeto pessoal de estudos e desenvolvimento profissional na área de Quality Assurance, com foco em testes manuais e qualidade de software.
 
-Projeto integrante do meu portfólio de QA.
+---
+
+*Este portfólio está em constante evolução, acompanhando o desenvolvimento das minhas habilidades em QA.*
