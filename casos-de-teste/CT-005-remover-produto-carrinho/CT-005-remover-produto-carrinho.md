@@ -1,41 +1,60 @@
-# CT-005 — Remover produto do carrinho de compras
 
-**Sistema:** SauceDemo  
-**Funcionalidade:** Carrinho de compras — remoção de produto  
-**História de usuário:** [HU-002 — Gerenciamento do carrinho de compras](../../requisitos/HU-002-gerenciamento-carrinho.md)  
-**Critério de aceitação:** [CA-02 — Remover produto](../../requisitos/HU-002-gerenciamento-carrinho.md#ca-02--remover-produto-do-carrinho)
+# CT-005 — Remoção do único produto do carrinho
+
+## Identificação
+
+- **ID:** CT-005
+- **Funcionalidade:** Carrinho de compras
+- **Sistema:** SauceDemo
+- **Tipo de teste:** Funcional — cenário positivo
+- **História de usuário:** [HU-002 — Gerenciamento do carrinho de compras](../../requisitos/HU-002-gerenciamento-carrinho.md)
+- **Critério de aceitação:** [CA-02 — Remover produto do carrinho](../../requisitos/HU-002-gerenciamento-carrinho.md#ca-02--remover-produto-do-carrinho)
+
 ## Objetivo
-Verificar se o sistema permite remover o único produto do carrinho de compras.
+
+Verificar se o sistema permite remover o único produto existente no carrinho de compras.
 
 ## Pré-condições
-- O usuário deve estar autenticado no SauceDemo.
-- O carrinho de compras deve conter exatamente um produto: Sauce Labs Backpack.
+
+- O sistema SauceDemo deve estar acessível.
+- O usuário deve estar autenticado.
+- O carrinho deve conter exatamente um produto: Sauce Labs Backpack.
 
 ## Dados de teste
-- **Usuário:** `standard_user`
-- **Senha:** `secret_sauce`
-- **Produto utilizado:** Sauce Labs Backpack
+
+- **Username:** `standard_user`
+- **Password:** `secret_sauce`
+- **Produto:** `Sauce Labs Backpack`
 
 ## Passos para execução
+
 1. Acessar o carrinho de compras.
-2. Clicar em **Remove** no produto adicionado.
-3. Verificar se o produto deixou de aparecer no carrinho.
-4. Observar e registrar o comportamento do contador do carrinho após a remoção do produto.
+2. Localizar o produto Sauce Labs Backpack.
+3. Clicar no botão **Remove** correspondente ao produto.
+4. Verificar se o produto deixou de ser exibido no carrinho.
+5. Observar o comportamento do contador do carrinho após a remoção.
 
 ## Resultado esperado
-O produto Sauce Labs Backpack deve deixar de ser exibido no carrinho de compras após a remoção.
+
+O produto Sauce Labs Backpack deve ser removido do carrinho de compras e deixar de aparecer na lista de itens.
 
 ## Resultado obtido
-O produto Sauce Labs Backpack foi removido do carrinho de compras. Como era o único produto, o contador deixou de ser exibido na página. Não foi apresentada mensagem de erro.
 
-## Observação de QA
-Produto removido corretamente do carrinho. Após a remoção do último item, o contador deixou de ser exibido; como não há critério definido sobre esse comportamento, registro como pendente de esclarecimento.
+O sistema removeu o produto Sauce Labs Backpack do carrinho de compras. Como era o único item, o contador deixou de ser exibido na página. Não foi apresentada mensagem de erro.
 
 ## Status
+
 **PASSED**
 
 ## Justificativa
-O sistema removeu o produto e não apresentou erro.
+
+O teste foi considerado aprovado porque o sistema removeu corretamente o único produto do carrinho, conforme o resultado esperado.
+
+## Observação de QA
+
+Após a remoção do último item, o contador do carrinho deixou de ser exibido. Como o requisito HU-002 não especifica se o contador deve ser ocultado ou apresentar o número zero, esse comportamento permanece pendente de definição.
 
 ## Evidência da execução
+
 ![Evidência CT-005 — Remoção de produto do carrinho](./CT-005-remover-produto-carrinho.png)
+
