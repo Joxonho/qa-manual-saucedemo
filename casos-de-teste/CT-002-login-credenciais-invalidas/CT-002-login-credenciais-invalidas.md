@@ -7,6 +7,8 @@
 - **Funcionalidade:** Login
 - **Sistema:** SauceDemo
 - **Tipo de teste:** Funcional — cenário negativo
+- - **História de usuário:** [HU-001 — Login de usuário](../../requisitos/HU-001-login.md)
+- **Critério de aceitação:** [CA-02 — Impedir login com credenciais inválidas](../../requisitos/HU-001-login.md#ca-02--impedir-login-com-credenciais-inválidas)
 
 ## Objetivo
 
