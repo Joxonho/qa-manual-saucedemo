@@ -6,6 +6,8 @@
 - **Funcionalidade:** Login
 - **Sistema:** SauceDemo
 - **Tipo de teste:** Funcional — cenário negativo
+- **História de usuário:** [HU-001 — Login de usuário](../../requisitos/HU-001-login.md)
+- **Critério de aceitação:** [CA-03 — Exigir preenchimento do nome de usuário](../../requisitos/HU-001-login.md#ca-03--exigir-preenchimento-do-nome-de-usuário)
 
 ## Objetivo
 
