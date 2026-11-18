@@ -1,7 +1,7 @@
 # CT-004 — Adição de produto ao carrinho de compras
 
 **História de usuário:** [HU-002 — Gerenciamento do carrinho de compras](../../requisitos/HU-002-gerenciamento-carrinho.md)  
-**Critério de aceitação principal:** CA-01 — Adicionar produto  
+**Critério de aceitação principal:** [CA-01 — Adicionar produto](../../requisitos/HU-002-gerenciamento-carrinho.md#ca-01--adicionar-produto-ao-carrinho)  
 **Sistema:** [SauceDemo](https://www.saucedemo.com/)  
 **Tipo de teste:** Funcional manual  
 **Data de execução:** 10/11/2026  
@@ -26,9 +26,7 @@ Verificar se o sistema permite que um usuário autenticado adicione corretamente
 
 1. Localizar o produto **Sauce Labs Backpack** na página de produtos.
 2. Clicar no botão **Add to cart** do produto.
-3. Verificar o contador exibido no ícone do carrinho.
-4. Acessar o carrinho de compras.
-5. Verificar o nome do produto e a quantidade apresentada no carrinho.
+3. Acessar o carrinho de compras.
 
 ## Resultado esperado
 
@@ -42,4 +40,4 @@ O sistema apresentou o produto **Sauce Labs Backpack** no carrinho de compras, c
 
 ![CT-004 — Produto Sauce Labs Backpack no carrinho, com quantidade e contador iguais a 1](./CT-004-produto-adicionado.png)
 
-> **Observação:** a captura comprova o estado final do carrinho. A execução dos passos e a condição inicial de carrinho vazio foram informadas pela testadora. A remoção do produto será documentada separadamente no CT-005.
+> **Observação:** a captura comprova o estado final do carrinho. A execução dos passos e a condição inicial de carrinho vazio foram informadas. A remoção do produto será documentada separadamente no CT-005.
