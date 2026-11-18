@@ -1,4 +1,3 @@
-
 # CT-002 — Login com usuário válido e senha incorreta
 
 ## Identificação
